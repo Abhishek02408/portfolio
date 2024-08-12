@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6c22c10c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+         <nav>
+           <img src="images/logo.png" class="logo">
+           <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+           </ul>    
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </nav>
+        <div class="header-text">
+            <p>FrontEnd Developer</p>
+            <div class="hi">
+            <img src="images/hI.png" alt="Hi" class="Hi">
+            <h1> Hi, I'm <span>Abhishek</span> <br>From India</h1>
+        </div>
+        </div>
+     </div>
+    </div>
+    <!---------------------about------------->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                <p class="about-me">I am Abhishek Singh, a skilled professional with a passion for both frontend development and data science. With a strong 
+                   foundation in HTML, CSS, and JavaScript, I have experience crafting user-centric web applications. I enjoy transforming
+                   design concepts into functional and visually appealing interfaces.<br><br>
+
+                   My interest in data extends to utilizing Python, Java, and C++ to extract valuable insights from complex datasets. I am 
+                   proficient in data manipulation and analysis using libraries like NumPy and Pandas. While I am continually exploring the 
+                   realm of machine learning, I have applied my knowledge to projects such as question bank generation and attendance tracking
+                   through facial recognition.I am a dedicated problem-solver with a keen eye for detail.I am eager to contribute my skills to 
+                   a dynamic team and take on new challenges in the world of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Data Science</span><br>Data analysis and manipulation using Python(different libraries) and Machine Learning</li>
+                            <li><span>Database management</span><br>Understanding of SQL and MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>School Management Program | C++, Visual Studio Code</span><br>Engineered a robust School Management Program that integrated attendance, grades, and behavioral data into a
+                                single platform; improved data retrieval speed by significantly reducing administrative workload for educators.</li>
+                            <li><span>Weather API | HTML, CSS, Javascript</span><br>Creating a Weather API front-end project involves building an interface that interacts with a weather API to
+                                provide users with real-time weather information.</li>
+                            <li><span>Automatic Question Bank Generating Software | Python, Visual Studio Code</span><br> Developed software to automatically generate question banks, streamlining the examination process.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Galgotia’s College of Engineering and Technology | Nov. 2021 – Present</span><br>B.Tech in Computer Science and Engineering(CGPA: 8.124)</li>
+                            <li><span>R.L.B Memorial School | Jul. 2019 – May 2020 </span><br>12th Board (Percentage: 92.6)</li>
+                            <li><span>Surya International School |  Jul. 2017 – May 2018 </span><br>10th Board (Percentage: 84.6)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----services-->
+    <!--My work-->
+    <!----------------Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>abhishek7800746800@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9919830629</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100010244557328"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-singh-58a792221/"><i class="fa-brands fa-linkedin"></i></a>  
+                    </div>
+                    <a href="images/AbhiResume1.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright #AbhiCreation</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");    
+     function opentab(tabname){
+        for(tablink of tablinks)
+     {
+        tablink.classList.remove("active-link");
+     }
+     for(tabcontent of tabcontents)
+     {
+        tabcontent.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+     }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyanJYahCBLR1zOs7Vdi58Y6wk10ryWp4U4AxmtnKv5V2LgSp_6RstBm8q3-FHbMANAEQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
