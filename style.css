@@ -177,7 +177,8 @@ color: #ababab;
 color: #ff004f;
 transform: translate(-5px);
 }
-.btn.btn2{ padding:10px;
+.btn.btn2{text-decoration:none;
+    padding:10px;
     color: #fff;
     font-size: 20px;
     display: inline-block;
