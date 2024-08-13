@@ -347,3 +347,8 @@ form input,form textarea{
     margin-top: -10px;
 display: block;
 }
+#msg{
+    color: greenyellow;
+    margin-top: 20px;
+    display: block;
+}
