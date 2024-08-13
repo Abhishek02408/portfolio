@@ -218,7 +218,7 @@ nav .fa-solid{
 }
 .header-text{
     margin-left: 8px;
-margin-top: 48%;
+margin-top: 60%;
 font-size: 19px;
 }
 .header-text p{
@@ -239,7 +239,7 @@ font-size: 19px;
 .hi{
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: 25px;
 }
 nav .fa-solid{
     display: block;
