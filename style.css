@@ -210,7 +210,14 @@ form input,form textarea{
     margin-top: 20px;
     text-align: center;
 }
-/*--------------------css for small Screens----------------------*/
+.project{ color:#ff0000;
+text-decoration: none;
+}
+.project:hover{transform: scale(0.5);
+    color: antiquewhite;
+    text-decoration: none;
+}
+/*--------------------css for small Screens width<=600px----------------------*/
 nav .fa-solid{
     display:none;
 }
@@ -342,6 +349,7 @@ form input,form textarea{
 
 }
 }
+/*---------For Form Submission and message of submission of form-----------*/
 #span{
     columns: green;
     margin-top: -10px;
@@ -351,4 +359,9 @@ display: block;
     color: greenyellow;
     margin-top: 20px;
     display: block;
+}
+/*------------------------For Small Screen 600<width<1000--------------*/
+@media only screen and (600px < width < 1000px)
+{
+
 }
