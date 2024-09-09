@@ -229,6 +229,8 @@ nav .fa-solid{
         justify-content: space-between;
         margin-left: 10px;
         background: #000000a5;
+        justify-items: center;
+        align-content: center;
         align-items: center;
         width: 100%; 
         margin-right: 10px; 
@@ -249,7 +251,8 @@ justify-items: top;
 .logo{
     width:150px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
 .hi{
     display: flex;
