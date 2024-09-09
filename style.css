@@ -105,7 +105,7 @@ color: #ababab;
     font-weight: 600;
     color: #fff;
 }
-.about-me{
+.about-me{width: 100%;
     font-size: 17px;
 }
 .tab-titles{
@@ -114,8 +114,7 @@ color: #ababab;
     margin-bottom: 40px;
 }
 .tab-links{
-    margin-right: 50px;
-    
+    margin-right: 50px; 
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -148,6 +147,7 @@ color: #ababab;
     display:block;
 }
 /*---Contact-----*/
+.row{display: flex;}
 .contact-left{margin-left: 1rem;
     flex-basis:35%
 }
