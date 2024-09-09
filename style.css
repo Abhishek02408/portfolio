@@ -230,7 +230,7 @@ nav .fa-solid{
         margin-left: 10px;
         background: #000000a5;
         align-items: center;
-        width: 50%; 
+        width: 100%; 
         margin-right: 10px; 
     }
 
@@ -263,7 +263,7 @@ nav .fa-xmark{
 nav .fa-bars{
     display: block;
     font-size: 25px;
-    margin-left: 165px;
+    margin-right: 20px;
 }
 
 nav ul{
